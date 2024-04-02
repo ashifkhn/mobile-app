@@ -1,79 +1,107 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+## Real Dev Squad Mobile App
 
-# Getting Started
+Welcome to the repository of our mobile app, which mirrors all the features of our web applications.
+## Tech Stack
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+   * React Native
+   * TypeScript
+   * StyleSheet
+## About the Project
 
-## Step 1: Start the Metro Server
+This project serves as the Real Dev Squad cross-platform mobile app, built using React Native.
+## First Phase
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- Github Authentication ✅ (we did it via webview, requirement has changed to browser login from github)
+- QR code Scanner Authentication ✅
+- Three Screens - Home and Profile ✅
+- Home screen Features ✅
+- Feature with switching from I am idle to doing task ✅
+- Feature with switching from out of office from back again ✅
+- Profile Screen in which we can change our profile through our phone’s gallery ✅
+- API integration in Profile Screen ✅
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Second Phase
+- Three Screens - Home , Goals and Profile ✅
+- Home screen Features ✅
+- Goals site Tab
+- Goals site feature will have the TODO app where you can assign the task to the member of the RDS.
 
-```bash
-# using npm
-npm start
+Feel free to download our RDS app by clicking on ➡️ [RDS App](https://drive.google.com/file/d/1aEv941izi5bOJzttZj22EKl47jTnsYy_/view?usp=sharing)
 
-# OR using Yarn
-yarn start
+**Note** : Please delete the previous RDS app build if you have.
+
+
+## Prerequisites
+
+
+To contribute, make sure you have the following:
+
+- React Native setup
+- Android Studio
+- JDK ( openjdk 17 )
+- Node setup ( use version v18.*, tested on v16.20.2)
+- [Volta](https://docs.volta.sh/guide/getting-started) | [Why Volta?](https://docs.volta.sh/guide/#why-volta)
+- React Native development environment set up
+- Android Studio installed
+- Node.js installed
+- for Node version management: [Volta](https://docs.volta.sh/guide/getting-started) | [Why Volta?](https://docs.volta.sh/guide/#why-volta)
+
+# **NOTE** : Make sure to set up the proper development environment required to run Hello world app in RN and drop a video link in #react-native channel.
+
+For detailed setup instructions,  refer to [React Native environment setup guide](https://reactnative.dev/docs/environment-setup).
+
+### Local App setup
+
+- Set up your local environment for React Native following the environment setup guide.
+- Clone the mobile app repository: git clone https://github.com/Real-Dev-Squad/mobile-app.git
+- Run the command: `yarn`
+- Start contributing!
+
+## Contribution Guide
+
+To contribute to our project:
+
+- Browse the issues and comment on the one you'd like to work on.
+- Once an issue is assigned to you, follow the local app setup steps.
+- Before pushing code, ensure it runs without errors.
+- Run yarn run `precommit-check`.
+- Commit your changes with a descriptive message.
+- Push your code to your branch.
+- If you need assistance, reach out on the mobile-app-react-native channel on Discord.
+
+
+## Git commands for local setup
+
+```
+git clone https://github.com/Real-Dev-Squad/mobile-app.git
+
+cd mobile-app
+
+yarn
 ```
 
-## Step 2: Start your Application
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## Git commands to commit your code:
+```
+git checkout -b 'your-PR-name'
 
-### For Android
+git add <files>
 
-```bash
-# using npm
-npm run android
+git commit -m "Your commit message"
 
-# OR using Yarn
-yarn android
+git push origin your-PR-name
+
 ```
 
-### For iOS
 
-```bash
-# using npm
-npm run ios
+## Test-Driven Development (TDD)
 
-# OR using Yarn
-yarn ios
-```
+All PRs should have 100% test coverage. Before submitting PRs, run yarn test to ensure all tests pass.
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+**Running/Development**
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+- Start Metro (JavaScript bundler): yarn `react-native start`
+- For Android: `yarn react-native run-android`
+- For iOS: yarn `react-native run-ios`
 
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+If the above commands fail, try building the Android app from Android Studio and the iOS app from Xcode.
