@@ -8,6 +8,7 @@ import {Provider} from 'react-redux';
 import createSagaMiddleware from '@redux-saga/core';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
+
 import rootSaga from './src/sagas/rootSaga';
 
 const sagaMiddleware = createSagaMiddleware();
